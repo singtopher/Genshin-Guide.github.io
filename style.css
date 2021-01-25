@@ -1,6 +1,6 @@
 body {margin:0;}
 
-ul {
+.nav {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -11,11 +11,11 @@ ul {
 	width: 100%;
 }
 
-li {
+.navli {
 	float: right;
 }
 
-li a {
+.navli a {
 	display: block;
 	color: white;
 	text-align: center;
@@ -23,7 +23,19 @@ li a {
 	text-decoration: none;
 }
 
-li a:hover:not(.active) {
+.navhomeli {
+	float: left;
+}
+
+.navhomeli a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.navli a:hover:not(.active) {
 	background-color: #111;
 }
 
