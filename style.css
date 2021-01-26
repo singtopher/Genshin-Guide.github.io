@@ -1,13 +1,21 @@
-body {
-	margin:0;
+html, body {
+	margin: 0;
+	height: 100%;
 	font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+	display: flex;
+	flex-flow: column;
+	height: 100%;
+	width: 100%;
 }
 
 .topnav {
 	list-style-type: none;
-	position: relative;
 	margin: 0;
 	padding: 0;
+	flex: 0 1 auto;
 	overflow: hidden;
 	text-align: center;
 	background-color: #111111;
@@ -22,15 +30,15 @@ body {
 	padding: 25px 50px;
 	text-decoration: none;
 	font-size: 17px;
-	display:inline-block;
+	display: inline-block;
 }
 
 .topnav li {
-	display:inline;
+	display: inline;
 }
 
 .topnav a:hover {
-	color:#ffffff;
+	color: #ffffff;
 }
 
 .topnav a.active {
@@ -38,9 +46,9 @@ body {
 }
 
 p {
-	padding:0px;
- 	margin-top:-5px;
- 	color:#eeeeee;
+	padding: 0px;
+ 	margin-top: -5px;
+ 	color: #eeeeee;
 }
 
 h1, h2 {
@@ -49,19 +57,16 @@ h1, h2 {
 }
 
 .content {
-	padding:100px 200px;
-	margin-top:0;
-	background-color:#222222;
-	height:1000px;
+	flex: 1 1 auto;
+	padding: 100px 200px;
+	background-color: #222222;
 }
 
 .footer {
-	margin: 0;
-	padding:15px;
+	flex: 0 1 auto;
+	padding: 15px;
 	overflow: hidden;
 	background-color: #111111;
-	top: 0;
-	height:30px;
 }
 
 
